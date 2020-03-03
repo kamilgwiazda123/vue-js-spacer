@@ -1,9 +1,13 @@
 import Vue from 'vue';
+import axios from 'axios';
+import VueAxios from 'vue-axios';
 import VueRouter from 'vue-router';
-import Home from '../views/Home.vue';
+import Home from '../views/Search.vue';
 import About from "../views/About";
 
+
 Vue.use(VueRouter);
+Vue.use(VueAxios, axios);
 
 const routes = [
   {
@@ -26,3 +30,4 @@ const router = new VueRouter({
 });
 
 export default router;
+
